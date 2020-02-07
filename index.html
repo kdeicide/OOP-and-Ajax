@@ -3,28 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <title>Assignment - 1</title>
   </head>
   <body>
     <div id="main_table">
       <div id="title_sect">
-        <h1>Assignment - 1</h1>
+        <h1>debugger</h1>
       </div>
       <div id="select_menu">
         <h4>Launch Selection</h4>
         <div class="left_menu">
-          <input type="checkbox" value="">Fried Chicken ($7.99)<br>
-          <input type="checkbox" value="">Fried halibut ($9.99)<br>
-          <input type="checkbox" value="">Hamburger ($7.99)<br>
-          <input type="checkbox" value="">Grilled Salmon ($12.99)<br>
-          <input type="checkbox" value="">Slide Salade ($5.99)<br>
+          <input type="checkbox" value="" />Fried Chicken ($7.99)<br />
+          <input type="checkbox" value="" />Fried halibut ($9.99)<br />
+          <input type="checkbox" value="" />Hamburger ($7.99)<br />
+          <input type="checkbox" value="" />Grilled Salmon ($12.99)<br />
+          <input type="checkbox" value="" />Slide Salade ($5.99)<br />
         </div>
         <div class="right_menu">
-          <p>Iten total </p>
-          <p>Tax </p>
-          <p>total with TAX</p>
+          <p>
+            Item total: <span class="result_layout" id="selected_price"></span>
+          </p>
+          <p>Tax: <span class="result_layout" id="tax_rate"></span></p>
+          <p>
+            total with TAX: <span class="result_layout" id="full_price"></span>
+          </p>
         </div>
+        <input type="button" value="Order!" id="my_btn" onsubmit="calculate()">
       </div>
     </div>
     <script src="index.js"></script>

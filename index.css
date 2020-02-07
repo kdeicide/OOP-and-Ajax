@@ -1,19 +1,38 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
 #main_table {
-    height: 500px;
-    width: 500px;
-    margin: auto;
+  height: 500px;
+  width: 500px;
+  margin: auto;
 }
 
 #title_sect {
-background-color: #4287f5;
+  background-color: #4287f5;
 }
 
 #title_sect h1 {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 #select_menu {
-    background-color: yellow;
-    
+  background-color: yellow;
+}
+
+.left_menu {
+  display: inline-block;
+}
+
+.right_menu {
+  display: inline-block;
+  margin: 0 0 0 60px;
+}
+
+.result_layout {
+}
+
+#my_btn {
+  display: block;
+  margin: auto;
 }
