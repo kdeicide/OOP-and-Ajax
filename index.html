@@ -14,11 +14,16 @@
       <div id="select_menu">
         <h4>Launch Selection</h4>
         <div class="left_menu">
-          <input type="checkbox" value="" />Fried Chicken ($7.99)<br />
-          <input type="checkbox" value="" />Fried halibut ($9.99)<br />
-          <input type="checkbox" value="" />Hamburger ($7.99)<br />
-          <input type="checkbox" value="" />Grilled Salmon ($12.99)<br />
-          <input type="checkbox" value="" />Slide Salade ($5.99)<br />
+          <input type="checkbox" value="7.99" class="selected_box" />Fried Chicken
+          ($7.99)<br />
+          <input type="checkbox" value="9.99" class="selected_box" />Fried halibut
+          ($9.99)<br />
+          <input type="checkbox" value="7.99" class="selected_box" />Hamburger
+          ($7.99)<br />
+          <input type="checkbox" value="12.99" class="selected_box" />Grilled Salmon
+          ($12.99)<br />
+          <input type="checkbox" value="5.99" class="selected_box" />Slide Salade
+          ($5.99)<br />
         </div>
         <div class="right_menu">
           <p>
@@ -29,7 +34,7 @@
             total with TAX: <span class="result_layout" id="full_price"></span>
           </p>
         </div>
-        <input type="button" value="Order!" id="my_btn" onsubmit="calculate()">
+        <input type="button" value="Order!" id="my_btn" onclick="calculate()" />
       </div>
     </div>
     <script src="index.js"></script>
