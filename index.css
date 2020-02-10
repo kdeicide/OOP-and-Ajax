@@ -2,13 +2,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 #main_table {
-  height: 500px;
   width: 500px;
   margin: auto;
 }
 
 #title_sect {
-  background-color: #4287f5;
+  background-color: rgb(84, 114, 178);
+  height: 43px;
 }
 
 #title_sect h1 {
@@ -17,7 +17,9 @@ body {
 }
 
 #select_menu {
-  background-color: yellow;
+  background-color: rgb(255, 219, 112);
+  margin: -22px 0 0 0;
+
 }
 
 .left_menu {
