@@ -9,12 +9,14 @@ function calculate() {
 
   /* Value before tax */
   document.getElementById("selected_price").innerHTML = checkedValue;
+
   /* value of the tax */
   var taxAmount = parseFloat((checkedValue * 15) / 100);
-  var rounded_number = taxAmount.toFixed(2);
-  document.getElementById("tax_rate").innerHTML = rounded_number;
+  var roundedTax = taxAmount.toFixed(2);
+  document.getElementById("tax_rate").innerHTML = roundedTax;
+
   /* total cost */
-  var totalCost = checkedValue + rounded_number;
-  //document.getElementById("full_price").innerHTML = totalCost;
-  console.log(totalCost);
+  var totalCost = checkedValue + taxAmount;
+  var roundedTotalCost = totalCost.toFixed(2)
+  document.getElementById("full_price").innerHTML = roundedTotalCost;
 }
