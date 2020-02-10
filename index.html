@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="index.css" />
     <title>Assignment - 1</title>
   </head>
-  <body>
+  <body onload="calculate()">
     <div id="main_table">
       <div id="title_sect">
         <h1>Assignment - 1</h1>
@@ -14,16 +14,16 @@
       <div id="select_menu">
         <h4>Launch Selection</h4>
         <div class="left_menu">
-          <input type="checkbox" value="7.99" class="selected_box" />Fried Chicken
-          ($7.99)<br />
-          <input type="checkbox" value="9.99" class="selected_box" />Fried halibut
-          ($9.99)<br />
+          <input type="checkbox" value="7.99" class="selected_box" />Fried
+          Chicken ($7.99)<br />
+          <input type="checkbox" value="9.99" class="selected_box" />Fried
+          halibut ($9.99)<br />
           <input type="checkbox" value="7.99" class="selected_box" />Hamburger
           ($7.99)<br />
-          <input type="checkbox" value="12.99" class="selected_box" />Grilled Salmon
-          ($12.99)<br />
-          <input type="checkbox" value="5.99" class="selected_box" />Slide Salade
-          ($5.99)<br />
+          <input type="checkbox" value="12.99" class="selected_box" />Grilled
+          Salmon ($12.99)<br />
+          <input type="checkbox" value="5.99" class="selected_box" />Slide
+          Salade ($5.99)<br />
         </div>
         <div class="right_menu">
           <p>
@@ -34,7 +34,13 @@
             Total with TAX: <span class="result_layout" id="full_price"></span>
           </p>
         </div>
-        <input type="button" value="Calculate" id="my_btn" onclick="calculate()" />
+        <input
+          type="button"
+          value="Calculate"
+          id="my_btn"
+          onclick="msg()"
+        />
+        <p id="the_msg"></p>
       </div>
     </div>
     <script src="index.js"></script>

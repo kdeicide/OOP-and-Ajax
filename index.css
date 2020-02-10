@@ -19,7 +19,7 @@ body {
 #select_menu {
   background-color: rgb(255, 219, 112);
   margin: -22px 0 0 0;
-
+  padding: 0 5px 5px;
 }
 
 .left_menu {
@@ -32,9 +32,15 @@ body {
 }
 
 .result_layout {
+  margin: 0 0 0 5px;
 }
 
 #my_btn {
   display: block;
-  margin: auto;
+}
+#the_msg {
+  margin: 5px;
+  text-align: center;
+  color: darkgreen;
+  font-weight: bold;
 }
