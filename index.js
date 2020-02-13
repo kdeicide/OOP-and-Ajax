@@ -5,7 +5,6 @@ function calculate() {
     if (inputElements[i].checked) {
       checkedValue += parseFloat(inputElements[i].value);
     }
-    setInterval(calculate, 1000);
   }
 
   /* Value before tax */
@@ -23,6 +22,6 @@ function calculate() {
 }
 /* Display message function */
 function msg() {
-  var message = "You don't need to click \"Calculate\", it's on setInterval :)";
+  var message = "You don't need to click \"Calculate\"\ :)";
   document.getElementById("the_msg").innerText = message;
 }
