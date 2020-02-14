@@ -11,17 +11,20 @@ function calculate() {
   }
 
   /* Value before tax */
-  document.getElementById("selected_price").innerHTML = checkedValue;
+  var selectedPrice = document.getElementById("selected_price");
+  selectedPrice.textContent = checkedValue;
 
   /* value of the tax */
   var taxAmount = parseFloat((checkedValue * 15) / 100);
   var roundedTax = taxAmount.toFixed(2);
-  document.getElementById("tax_rate").innerHTML = roundedTax;
+  var taxRate = document.getElementById("tax_rate");
+  taxRate.textContent = roundedTax;
 
   /* total cost */
   var totalCost = checkedValue + taxAmount;
   var roundedTotalCost = totalCost.toFixed(2);
-  document.getElementById("full_price").innerHTML = roundedTotalCost;
+  var fullPrice = document.getElementById("full_price");
+  fullPrice.textContent = roundedTotalCost;
 }
 /* Display message function */
 var showMsg = document.getElementById("my_btn");
@@ -29,5 +32,6 @@ showMsg.addEventListener("click", msg);
 
 function msg() {
   var message = 'You don\'t need to click "Calculate" :)';
-  document.getElementById("the_msg").innerText = message;
+  var theMessage = document.getElementById("the_msg");
+  theMessage.textContent = message;
 }
