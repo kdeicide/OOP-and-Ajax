@@ -1,3 +1,6 @@
+var sratCal = document.getElementById("main_table");
+sratCal.addEventListener("click", calculate);
+
 function calculate() {
   var checkedValue = 0;
   var inputElements = document.getElementsByClassName("selected_box");
@@ -21,7 +24,10 @@ function calculate() {
   document.getElementById("full_price").innerHTML = roundedTotalCost;
 }
 /* Display message function */
+var showMsg = document.getElementById("my_btn");
+showMsg.addEventListener("click", msg);
+
 function msg() {
-  var message = "You don't need to click \"Calculate\"\ :)";
+  var message = 'You don\'t need to click "Calculate" :)';
   document.getElementById("the_msg").innerText = message;
 }
