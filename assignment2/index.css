@@ -21,3 +21,11 @@
   width: 85%;
   margin: auto;
 }
+
+.coffee_pics {
+  width: 200px;
+  max-height: 134px;
+}
+#order_pics {
+  margin: 15px 50px;
+}
