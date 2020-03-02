@@ -1,0 +1,40 @@
+#main_container {
+  border: black solid 2px;
+  width: 50%;
+  margin: auto;
+  border-radius: 25px;
+}
+
+#logo_pic {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pic_and_title h2 {
+  text-align: center;
+}
+
+#border_line {
+  border-top: 3px solid rgb(0, 255, 255);
+  width: 85%;
+  margin: auto;
+}
+
+.coffee_pics {
+  width: 200px;
+  max-height: 134px;
+}
+#order_pics {
+  margin: 15px 50px;
+}
+.text_info {
+  margin: 2px 5px 3px 20px;
+}
+#order_pics p {
+position:relative;
+bottom:30px;
+left:0px;
+visibility:hidden;
+}

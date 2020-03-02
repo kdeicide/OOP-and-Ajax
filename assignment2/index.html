@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <title>Assignment #2</title>
+  </head>
+  <body>
+    <div id="main_container">
+      <div id="pic_and_title">
+        <img src="pictures/cats.png" alt="logo of the cafe!" id="logo_pic" />
+        <h2>Tuxedo Cat Coffee</h2>
+      </div>
+      <div id="border_line"></div>
+      <div id="selecting_menu">
+        <h3 class="text_info">Menu</h3>
+        <p class="text_info">Click an item to add it to your order</p>
+        <div id="order_pics">
+          <img
+            src="pictures/coffee_1.png"
+            class="coffee_pics"
+            alt="coffee_1"
+            id="cf1"
+          />
+          <img
+            src="pictures/coffee_2.png"
+            class="coffee_pics"
+            alt="coffee_2"
+            id="cf2"
+          />
+          <img
+            src="pictures/coffee_3.png"
+            class="coffee_pics"
+            alt="coffee_3"
+            id="cf3"
+          />
+          <img
+            src="pictures/coffee_4.png"
+            class="coffee_pics"
+            alt="coffee_4"
+            id="cf4"
+          />
+          <img
+            src="pictures/coffee_5.png"
+            class="coffee_pics"
+            alt="coffee_5"
+            id="cf5"
+          />
+          <img
+            src="pictures/coffee_6.jpeg"
+            class="coffee_pics"
+            alt="coffee_6"
+            id="cf6"
+          />
+        </div>
+        <h3 class="text_info">Your Order</h3>
+        <div id="order_selected"></div>
+        <h3 class="text_info">Total:</h3>
+        <p id="total_price"></p>
+        <input type="button" class="text_info" value="Place your order" />
+        <input type="button" class="text_info" value="Clean order" />
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
