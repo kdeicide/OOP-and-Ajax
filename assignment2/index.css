@@ -32,3 +32,9 @@
 .text_info {
   margin: 2px 5px 3px 20px;
 }
+#order_pics p {
+position:relative;
+bottom:30px;
+left:0px;
+visibility:hidden;
+}
