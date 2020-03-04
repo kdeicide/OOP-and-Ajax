@@ -9,3 +9,9 @@ $(".coffee_pics")
     $(e.currentTarget).attr("src", defaultImg);
   });
 /* End of mouse over section */
+
+$(".coffee_list").on("click", function(e) {
+  price = $(e.currentTarget).val();
+  price1 = price / 100;
+  alert(price1);
+});
