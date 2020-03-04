@@ -1,3 +1,6 @@
+body {
+  font-family: cursive;
+}
 #main_container {
   border: black solid 2px;
   width: 50%;
@@ -32,7 +35,7 @@
   min-width: 400px;
 }
 .text_info {
-  margin: 2px 5px 3px 20px;
+  margin: 2px 5px 3px 5%;
 }
 #order_pics p {
   position: relative;
