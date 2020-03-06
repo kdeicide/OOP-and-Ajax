@@ -1,0 +1,24 @@
+.main {
+    margin: auto;
+    width: 50%;
+    font-family: Calibri;
+    background: yellow;
+    padding: 0 0 10px 0;
+}
+.main_title {
+    text-align: center;
+        background: purple;
+    color: white;
+}
+
+.second_title{
+    text-align: center;
+}
+.my_list {
+
+
+}
+
+.my_items {
+
+}

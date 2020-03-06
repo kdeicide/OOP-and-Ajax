@@ -1,0 +1,42 @@
+.main {
+    margin: auto;
+    width: 50%;
+    border: 6px solid green;
+    padding: 10px;
+    font-family: Calibri;
+    background: white;
+}
+.main_title {
+    text-align: center;
+    margin: 0 0 30px 0;
+
+}
+
+.second_title{
+    text-align: center;
+}
+.my_list {
+    color: white;
+
+}
+
+.my_items {
+
+}
+
+#the_display {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+#sub_but {
+    margin: 20px 0 0 0;
+    display: block;
+}
