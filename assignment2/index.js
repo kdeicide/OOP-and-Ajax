@@ -15,6 +15,7 @@ $(".coffee_pics").on("click", function(e) {
   var price1 = parseFloat(price); //price of the item
 
   var itemInfo = $(e.currentTarget).data("info"); //Name of the item
-  $("#order_selected").append("<p class='added_item'></p>").text(itemInfo);
-  
+  $("#order_selected")
+    .append("<p class='added_item'></p>")
+    .text(itemInfo + " " + price1);
 });
