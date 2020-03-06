@@ -10,8 +10,11 @@ $(".coffee_pics")
   });
 /* End of mouse over section */
 
-$(".coffee_list").on("click", function(e) {
-  price = $(e.currentTarget).val();
-  price1 = price / 100;
-  alert(price1);
+$(".coffee_pics").on("click", function(e) {
+  var price = $(e.currentTarget).data("price");
+  var price1 = parseFloat(price); //price of the item
+
+  var itemInfo = $(e.currentTarget).data("info"); //Name of the item
+  $("#order_selected").append("<p class='added_item'></p>").text(itemInfo);
+  
 });
