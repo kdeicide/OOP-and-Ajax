@@ -44,10 +44,3 @@ body {
   visibility: hidden;
 }
 
-.coffee_list {
-  list-style-type: none;
-  float: left;
-}
-#pic_n_list {
-  display: inline-block;
-}
