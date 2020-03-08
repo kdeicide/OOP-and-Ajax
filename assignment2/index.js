@@ -8,14 +8,22 @@ $(".coffee_pics")
   .on("mouseleave", function(e) {
     $(e.currentTarget).attr("src", defaultImg);
   });
-/* End of mouse over section */
 
+/* Click to add the item section */
+var price;
+var floatedPrice;
+var itemInfo;
+var beforeLast;
 $(".coffee_pics").on("click", function(e) {
-  var price = $(e.currentTarget).data("price");
-  var price1 = parseFloat(price); //price of the item
+  price = $(e.currentTarget).data("price");
+  floatedPrice = parseFloat(price); //price of the item
 
-  var itemInfo = $(e.currentTarget).data("info"); //Name of the item
-  $("#order_selected")
-    .append("<p class='added_item'></p>")
-    .text(itemInfo + " " + price1);
+  itemInfo = $(e.currentTarget).data("info"); //Name of the item
+  beforeLast = $("li:last-child");
+
+  $("#order_selected");
+  beforeLast
+    .after("<li class='added_item'></li>")
+    .text(itemInfo + " $" + floatedPrice);
 });
+

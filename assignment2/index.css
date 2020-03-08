@@ -43,4 +43,6 @@ body {
   left: 0px;
   visibility: hidden;
 }
-
+li {
+  list-style: none;
+}
