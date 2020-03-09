@@ -14,10 +14,13 @@ var price;
 var floatedPrice;
 var itemInfo;
 var beforeLast;
+var total = 0;
 $(".coffee_pics").on("click", function(e) {
   price = $(e.currentTarget).data("price");
   floatedPrice = parseFloat(price); //price of the item
+  total += price;
 
+  $(".total_price").text(total);
   itemInfo = $(e.currentTarget).data("info"); //Name of the item
   beforeLast = $("li:last-child");
 
@@ -26,4 +29,3 @@ $(".coffee_pics").on("click", function(e) {
     .after("<li class='added_item'></li>")
     .text(itemInfo + " $" + floatedPrice);
 });
-
