@@ -18,9 +18,10 @@ var total = 0;
 $(".coffee_pics").on("click", function(e) {
   price = $(e.currentTarget).data("price");
   floatedPrice = parseFloat(price); //price of the item
-  total += price;
-
-  $(".total_price").text(total);
+  total += floatedPrice;
+  totalFixed = total.toFixed(2);
+  $(".total_price").text(totalFixed);
+  
   itemInfo = $(e.currentTarget).data("info"); //Name of the item
   beforeLast = $("li:last-child");
 
