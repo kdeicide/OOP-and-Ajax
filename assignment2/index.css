@@ -1,5 +1,5 @@
 body {
-  font-family: cursive;
+  font-family: sans-serif;
 }
 #main_container {
   border: black solid 2px;
@@ -34,8 +34,12 @@ body {
   max-width: 900px;
   min-width: 400px;
 }
-.text_info {
+.text_info,
+a {
   margin: 2px 5px 3px 5%;
+}
+a:visited{
+  color: blue;
 }
 #order_pics p {
   position: relative;
@@ -45,4 +49,18 @@ body {
 }
 li {
   list-style: none;
+}
+
+#total_section p {
+  display: inline-block;
+}
+#order_selected {
+  overflow: scroll;
+  height: 150px;
+  width: 300px;
+  border-style: solid;
+  margin: 2px 5px 3px 5%;
+}
+#selecting_menu {
+  margin: 0 50px;
 }
