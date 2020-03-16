@@ -9,7 +9,7 @@ $(".coffee_pics")
     $(e.currentTarget).attr("src", defaultImg);
   });
 
-/* Click to add the item section */
+/* Click to add the item section and calculation */
 var price;
 var floatedPrice;
 var itemInfo;
@@ -21,7 +21,7 @@ $(".coffee_pics").on("click", function(e) {
   total += floatedPrice;
   totalFixed = total.toFixed(2);
   $(".total_price").text(totalFixed);
-  
+
   itemInfo = $(e.currentTarget).data("info"); //Name of the item
   beforeLast = $("li:last-child");
 
@@ -29,4 +29,21 @@ $(".coffee_pics").on("click", function(e) {
   beforeLast
     .after("<li class='added_item'></li>")
     .text(itemInfo + " $" + floatedPrice);
+});
+
+/* clearing the selected items */
+
+$("#clean").on("click", function() {
+  $(".added_item").remove();
+  $("#order_selected");
+  beforeLast.after("<li class='added_item'></li>");
+  $(".total_price").remove();
+});
+
+
+/* redirecting to ordered page */
+
+$("#submitted").on('click', function () {
+  window.location.href =
+    "submitted_page.html";
 });
