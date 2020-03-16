@@ -35,8 +35,7 @@ $(".coffee_pics").on("click", function(e) {
 
 $("#clean").on("click", function() {
   $(".added_item").remove();
-  $("#order_selected");
-  beforeLast.after("<li class='added_item'></li>");
+  $("#order_selected").append("<li class='added_item'></li>");
   $(".total_price").remove();
 });
 
