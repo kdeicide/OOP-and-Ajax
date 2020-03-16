@@ -15,7 +15,7 @@ var floatedPrice;
 var itemInfo;
 var beforeLast;
 var total = 0;
-$(".coffee_pics").on("click", function(e) {
+$(".coffee_pics").on("click", function calculate (e) {
   price = $(e.currentTarget).data("price");
   floatedPrice = parseFloat(price); //price of the item
   total += floatedPrice;
@@ -31,17 +31,17 @@ $(".coffee_pics").on("click", function(e) {
     .text(itemInfo + " $" + floatedPrice);
 });
 
-/* clearing the selected items */
 
+/* clearing the selected items */
 $("#clean").on("click", function() {
   $(".added_item").remove();
   $("#order_selected").append("<li class='added_item'></li>");
   $(".total_price").remove();
+  $("#total_h").append("<p class='total_price'></p>");
 });
 
 
 /* redirecting to ordered page */
-
 $("#submitted").on('click', function () {
   window.location.href =
     "submitted_page.html";
