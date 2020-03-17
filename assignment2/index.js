@@ -20,7 +20,7 @@ $(".coffee_pics").on("click", function calculate (e) {
   floatedPrice = parseFloat(price); //price of the item
   total += floatedPrice;
   totalFixed = total.toFixed(2);
-  $(".total_price").text(totalFixed);
+  $(".total_price").text(' $'+totalFixed);
 
   itemInfo = $(e.currentTarget).data("info"); //Name of the item
   beforeLast = $("li:last-child");
@@ -38,6 +38,7 @@ $("#clean").on("click", function() {
   $("#order_selected").append("<li class='added_item'></li>");
   $(".total_price").remove();
   $("#total_h").append("<p class='total_price'></p>");
+  total = 0;
 });
 
 
