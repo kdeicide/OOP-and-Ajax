@@ -45,5 +45,5 @@ $("#clean").on("click", function() {
 /* redirecting to ordered page */
 $("#submitted").on('click', function () {
   window.location.href =
-    "submitted_page.html";
+    "checkout.html";
 });
