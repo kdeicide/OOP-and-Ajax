@@ -40,4 +40,4 @@ $("li").on("mouseenter", mouseEnter);
 $("li").on("mouseleave", mouseLeft);
 $("input:eq(1)").on("click", addMovie);
 
-/* Sale no mobarak */
+
